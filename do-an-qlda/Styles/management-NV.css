@@ -1,0 +1,105 @@
+.head {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.title {
+  padding-right: 715px;
+}
+
+.text2 {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.text3 {
+  font-size: 16px;
+  opacity: 60%;
+  padding-top: 2px;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.add-emp {
+  padding-top: 30px;
+  display: flex;
+}
+
+.btn-add-emp {
+  border-radius: 30px;
+  display: flex;
+  cursor: pointer;
+  background-color: #e8436a;
+  padding: 10px 30px 10px 30px;
+
+  &:hover {
+    opacity: 70%;
+  }
+}
+
+.btn-icons {
+  background: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-icons {
+  padding-top: 7px;
+  padding-right: 15px;
+}
+
+.ti-layout-grid3,
+.ti-view-list {
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 25px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.ti-plus {
+  padding-right: 10px;
+  padding-top: 2px;
+  color: #fff;
+}
+
+.text-btn {
+  font-weight: 700;
+  color: #fff;
+}
+
+.sort-employee {
+  display: flex;
+}
+
+.sort-id,
+.sort-name,
+.sort-position {
+  padding-right: 80px;
+}
+
+.ip-id,
+.ip-name,
+.sl-pos {
+  padding: 15px 40px 15px 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+.btn-search {
+  padding: 15px 80px 15px 80px;
+  background-color: #55cf63;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
