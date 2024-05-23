@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-filter {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#search {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#filter {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.room-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.room-info {
+  margin-top: 10px;
+}
+
+.room-info p {
+  margin: 5px 0;
+}
+
+/* .room-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0381ff;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+} */
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.room-header.available {
+  background-color: #0381ff;
+}
+
+.room-header.busy {
+  background-color: #dc3545;
+}
+.room-header p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.room-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.room-details p {
+  margin: 0;
+}
+
+.room-name {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.room-time {
+  text-align: center;
+  margin: 10px 0;
+  color: #0381ff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.book {
+  background-color: #28a745;
+  color: white;
+}
+
+button.details {
+  background-color: #007bff;
+  color: white;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: white;
+  width: 60%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

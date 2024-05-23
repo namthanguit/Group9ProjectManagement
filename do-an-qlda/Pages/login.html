@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Styles/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form" id="login-form">
+            <form action="#" class="sub-form">
+                <div class="upper-form">
+                    <h2>Login Form</h2>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username"> <br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"> <br>
+                    <div class="btn">
+                        <button type="submit">Login</button>
+                    </div>
+                </div>
+                <div class="bottom-form">
+                    <div class="no-account">
+                        Don't have an account?
+                    </div>
+                    <a href="#" id="show-signup" class="sign-up">Sign up</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form hide" id="signup-form">
+            <form action="#" class="sub-form">
+                <div class="upper-form">
+                    <h2>Sign Up</h2>
+                    <label for="signup-username">Username</label>
+                    <input type="text" name="username" id="signup-username"> <br>
+                    <label for="signup-email">Email</label>
+                    <input type="email" name="email" id="signup-email"> <br>
+                    <label for="signup-phone">Số điện thoại</label>
+                    <input type="text" name="sdt" id="signup-phone"> <br>
+                    <label for="signup-password">Password</label>
+                    <input type="password" name="password" id="signup-password"> <br>
+                    <div class="btn">
+                        <button type="submit">Sign up</button>
+                    </div>
+                </div>
+                <div class="bottom-form">
+                    <div class="no-account">
+                        Đã có tài khoản?
+                    </div>
+                    <a href="#" id="show-login" class="sign-up">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('show-signup').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('login-form').classList.add('hide');
+            document.getElementById('signup-form').classList.remove('hide')
+        });
+
+        document.getElementById('show-login').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('signup-form').classList.add('hide');
+            document.getElementById('login-form').classList.remove('hide');
+        });
+
+
+        document.getElementById('login-form').classList.add('active');
+    </script>
+</body>
+
+</html>
