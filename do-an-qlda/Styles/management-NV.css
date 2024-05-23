@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .head {
   display: flex;
   padding-bottom: 30px;
@@ -33,6 +37,7 @@
   cursor: pointer;
   background-color: #e8436a;
   padding: 10px 30px 10px 30px;
+  border: none;
 
   &:hover {
     opacity: 70%;
@@ -74,6 +79,7 @@
 
 .sort-employee {
   display: flex;
+  padding-bottom: 30px;
 }
 
 .sort-id,
@@ -98,8 +104,43 @@
   color: #fff;
   font-size: 17px;
   cursor: pointer;
+  border: none;
 
   &:hover {
     opacity: 80%;
   }
+}
+
+.line3,
+.line2,
+.line1 {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.emp-profile {
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  width: 265px;
+  height: 200px;
+  text-align: center;
+  margin-right: 46px;
+}
+
+.detail-profile {
+  padding-top: 10px;
+}
+
+.emp-img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.emp-name {
+  font-size: 19px;
+}
+
+.emp-pos {
+  opacity: 70%;
 }
