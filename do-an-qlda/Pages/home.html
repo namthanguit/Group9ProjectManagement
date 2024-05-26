@@ -1,11 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <h1>hbksdgkiseg</h1>
-    <p>dgeg</p>
-  </head>
-  <body></body>
+
+<head>
+  <link rel="stylesheet" href="../Styles/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../Assets/fonts/themify-icons/themify-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../JavaScript/home-charts/birthday-noti.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <sidebar-component></sidebar-component>
+    <script src="../JavaScript/home-charts/sidebar-component.js"></script>
+
+    <div class="container">
+      <div class="page-header">
+        <div class="row">
+          <div class="page-title">
+            <h3 class="txt-overview">Dashboard Overview</h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <div class="content1">
+          <h3 class="txt-content">
+            New Employee Joined
+          </h3>
+          <div class="numbers">
+            <div class="numberEmp">
+              <p class="number">35</p>
+            </div>
+            <div class="percent">+2.5%</div>
+            <i class="ti-export"></i>
+          </div>
+        </div>
+
+        <div class="content2">
+          <h3 class="txt-content">
+            Employee Turnover
+          </h3>
+          <div class="numbers">
+            <div class="numberEmp">
+              <p class="number">1200</p>
+            </div>
+            <div class="percent2">-6.5%</div>
+            <i class="ti-import"></i>
+          </div>
+        </div>
+
+        <div class="content3">
+          <h3 class="txt-content">
+            Gross Net Profit
+          </h3>
+          <div class="numbers">
+            <div class="numberEmp">
+              <p class="number">$5200</p>
+            </div>
+            <div class="percent3">+10.5%</div>
+            <i class="ti-export"></i>
+          </div>
+        </div>
+
+        <div class="roll-call">
+          <div class="presence">
+            <p class="txt-presence">Presence</p>
+            <p class="num-presence">125</p>
+          </div>
+          <div class="late">
+            <p class="txt-late">Late</p>
+            <p class="num-late">12</p>
+          </div>
+          <div class="absent">
+            <p class="txt-absent">Absent</p>
+            <p class="num-absent">32</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-info">
+        <div class="graphs">
+          <div class="graphs-row1">
+            <div class="project-tracked">
+              <p class="txt-project-tracked">Project Tracked</p>
+              <div class="chart-project-tracked">
+                <canvas id="bar-chart"></canvas>
+              </div>
+            </div>
+            <script src="../JavaScript/home-charts/bar-chart.js"></script>
+
+            <div class="evaluation-progress">
+              <p class="txt-evaluation-progress">Evaluation Progress</p>
+              <div class="chart-evaluation-progress">
+                <canvas id="pie-chart"></canvas>
+              </div>
+            </div>
+            <script src="../JavaScript/home-charts/pie-chart.js"></script>
+          </div>
+
+          <div class="graphs-row2">
+            <div class="employee-composition">
+              <p class="txt-employee-composition">Employee Composition</p>
+              <div class="chart-employee-composition">
+                <canvas id="donut-chart"></canvas>
+              </div>
+            </div>
+            <script src="../JavaScript/home-charts/donut-chart.js"></script>
+
+            <div class="calendar">
+              <div class="header">
+                <button id="prevMonth">
+                  <i class="ti-angle-left"></i>
+                </button>
+                <div id="monthYear"></div>
+                <button id="nextMonth">
+                  <i class="ti-angle-right"></i>
+                </button>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days" id="calendarDays"></div>
+            </div>
+            <script src="../JavaScript/home-charts/calendar.js"></script>
+          </div>
+        </div>
+
+        <div class="statistics">
+          <div id="notification" class="card">
+            <img id="profile-pic" src="../Assets/EmployeesPhotos/ozil.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="event-info">
+              <h2>Today Event</h2>
+              <p id="event-text">Ozil's Birthday</p>
+            </div>
+          </div>
+          <script src="../JavaScript/home-charts/birthday-noti.js"></script>
+
+          <div class="absent-employee">
+            <h2>Absent Employee</h2>
+            <div class="employee">
+              <img src="../Assets/EmployeesPhotos/cr7.jpg" alt="Ronaldo">
+              <div class="employee-info">
+                <p class="name">Ronaldo</p>
+                <p class="status">Medical Leave</p>
+              </div>
+            </div>
+            <div class="employee">
+              <img src="../Assets/EmployeesPhotos/degea.jpg" alt="De Gea">
+              <div class="employee-info">
+                <p class="name">De Gea</p>
+                <p class="status">Family Matter</p>
+              </div>
+            </div>
+            <div class="employee">
+              <img src="../Assets/EmployeesPhotos/kdb.jpg" alt="De Bruyne">
+              <div class="employee-info">
+                <p class="name">De Bruyne</p>
+                <p class="status">Medical Leave</p>
+              </div>
+            </div>
+            <div class="employee">
+              <img src="../Assets/EmployeesPhotos/lewan.jpg" alt="Lewandowski">
+              <div class="employee-info">
+                <p class="name">Lewandowski</p>
+                <p class="status">Vacation</p>
+              </div>
+            </div>
+            <div class="employee">
+              <img src="../Assets/EmployeesPhotos/m10.jpg" alt="Messi">
+              <div class="employee-info">
+                <p class="name">Messi</p>
+                <p class="status">Medical Leave</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<body></body>
+
 </html>

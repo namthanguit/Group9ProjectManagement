@@ -1,0 +1,86 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    /* height: 100%; */
+    background-color: #0d0c31;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h2 {
+    font-size: 14px;
+    color: #ff4d4d;
+    margin: 10px 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.sidebar-link.active,
+.sidebar-link:hover {
+    background-color: #1a1a50;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+}
+
+/* Icons styles */
+.icon-dashboard:before {
+    content: "\1F4C8";
+    /* Example Unicode character */
+}
+
+.icon-apps:before {
+    content: "\1F4BE";
+    /* Example Unicode character */
+}
+
+.icon-employees:before {
+    content: "\1F465";
+    /* Example Unicode character */
+}
+
+.icon-clients:before {
+    content: "\1F46A";
+    /* Example Unicode character */
+}
+
+.icon-projects:before {
+    content: "\1F680";
+    /* Example Unicode character */
+}
+
+.icon-leads:before {
+    content: "\1F4E6";
+    /* Example Unicode character */
+}
+
+.icon-tickets:before {
+    content: "\1F3AB";
+    /* Example Unicode character */
+}
+
+.icon-accounts:before {
+    content: "\1F4BC";
+    /* Example Unicode character */
+}
