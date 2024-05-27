@@ -48,7 +48,7 @@ class SidebarComponent extends HTMLElement {
                 </div>
                 <div class="sidebar-section">
                     <h2>HR</h2>
-                    <a href="account.html" class="sidebar-link">
+                    <a href="account.html" class="sidebar-link a">
                         <i class="icon-accounts"></i>
                         Accounts
                     </a>
