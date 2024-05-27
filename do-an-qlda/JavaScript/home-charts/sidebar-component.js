@@ -1,11 +1,11 @@
 class SidebarComponent extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
 
-    connectedCallback() {
-        this.shadowRoot.innerHTML = `
+  connectedCallback() {
+    this.shadowRoot.innerHTML = `
             <style>
                 ${this.getStyles()}
             </style>
@@ -48,17 +48,17 @@ class SidebarComponent extends HTMLElement {
                 </div>
                 <div class="sidebar-section">
                     <h2>HR</h2>
-                    <a href="#" class="sidebar-link">
+                    <a href="account.html" class="sidebar-link">
                         <i class="icon-accounts"></i>
                         Accounts
                     </a>
                 </div>
             </div>
         `;
-    }
+  }
 
-    getStyles() {
-        return `
+  getStyles() {
+    return `
             .sidebar {
                 width: 187px;
                 height: 100%;
@@ -117,7 +117,7 @@ class SidebarComponent extends HTMLElement {
                 content: "\\1F4BC";
             }
         `;
-    }
+  }
 }
 
-customElements.define('sidebar-component', SidebarComponent);
+customElements.define("sidebar-component", SidebarComponent);
