@@ -25,7 +25,7 @@ class SidebarComponent extends HTMLElement {
                 </div>
                 <div class="sidebar-section">
                     <h2>MANAGEMENT</h2>
-                    <a href="../Pages/management-NV.html" class="sidebar-link">
+                    <a href="../Pages/detail-NV.html" class="sidebar-link">
                         <i class="icon-employees"></i>
                         Employees
                     </a>
