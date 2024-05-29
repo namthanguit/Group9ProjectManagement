@@ -1,0 +1,50 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-window {
+  height: 550px;
+  width: 880px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.emp-input {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.detail-title {
+  width: 120px;
+  padding-right: 7px;
+  padding-left: 200px;
+  padding-top: 7px;
+}
+
+.input-id input {
+  height: 30px;
+  width: 300px;
+}
+
+.button-confirm {
+  padding-left: 200px;
+  padding-top: 20px;
+}
+
+.btn-confirm {
+  padding: 15px 40px 15px 40px;
+  margin-left: 120px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #e8436a;
+  border: none;
+  color: #fff;
+
+  &:hover {
+    opacity: 70%;
+  }
+}

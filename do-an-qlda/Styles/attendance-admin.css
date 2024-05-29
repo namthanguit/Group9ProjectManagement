@@ -1,0 +1,90 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-title {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.title {
+  padding-right: 715px;
+}
+
+.text2 {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.text3 {
+  font-size: 16px;
+  opacity: 60%;
+  padding-top: 2px;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.sort-employee {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.sort-name {
+  padding-right: 700px;
+}
+
+.ip-name {
+  padding: 15px 40px 15px 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+.btn-search {
+  padding: 15px 80px 15px 80px;
+  background-color: #55cf63;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f4f4f4;
+}
+.check {
+  color: green;
+}
+.cross {
+  color: red;
+}
+.employee-name {
+  text-align: left;
+}
+.employee-name img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
