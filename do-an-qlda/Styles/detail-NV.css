@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Mulish', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -77,6 +77,7 @@ body {
   text-align: center;
   width: calc(25% - 20px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .employee-card img {
@@ -96,4 +97,44 @@ body {
   margin: 0;
   color: #666;
   font-size: 14px;
+}
+
+.employee-details {
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 2.0;
+  width: 500px;
+  height: 100%;
+}
+
+.employee-details.active {
+  display: block;
+}
+
+.employee-details img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.employee-details h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.employee-details p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.employee-information {
+  display: flex;
 }

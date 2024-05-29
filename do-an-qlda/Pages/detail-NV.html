@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Dashboard</title>
+  <title>Employee Profile Dashboard</title>
   <link rel="stylesheet" href="../Styles/detail-NV.css">
 </head>
 
@@ -31,54 +31,60 @@
     <div class="add-employee">
       <button>+ Add Employee</button>
     </div>
-    <div class="employee-list">
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/cr7.jpg" alt="Cristiano">
-        <h2>Cristiano</h2>
-        <p>Web Developer</p>
+    <div class="employee-information">
+      <div class="employee-list">
+        <div class="employee-card" onclick="showProfile('cristiano')">
+          <img src="../Assets/EmployeesPhotos/cr7.jpg" alt="Cristiano">
+          <h2>Cristiano</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('messi')">
+          <img src="../Assets/EmployeesPhotos/m10.jpg" alt="Messi">
+          <h2>Messi</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('debruyne')">
+          <img src="../Assets/EmployeesPhotos/kdb.jpg" alt="De Bruyne">
+          <h2>De Bruyne</h2>
+          <p>IOS Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('neymar')">
+          <img src="../Assets/EmployeesPhotos/ney.jpg" alt="Neymar">
+          <h2>Neymar</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('foden')">
+          <img src="../Assets/EmployeesPhotos/foden.jpg" alt="Foden">
+          <h2>Foden</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('kaka')">
+          <img src="../Assets/EmployeesPhotos/kaka.jpg" alt="Kaka">
+          <h2>Kaka</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('lewan')">
+          <img src="../Assets/EmployeesPhotos/lewan.jpg" alt="Lewandowski">
+          <h2>Lewandowski</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('ozil')">
+          <img src="../Assets/EmployeesPhotos/ozil.jpg" alt="Ozil">
+          <h2>Ozil</h2>
+          <p>Web Developer</p>
+        </div>
+        <div class="employee-card" onclick="showProfile('vini')">
+          <img src="../Assets/EmployeesPhotos/vini.jpg" alt="Vinicius">
+          <h2>Vinicius</h2>
+          <p>Web Developer</p>
+        </div>
       </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/m10.jpg" alt="Messi">
-        <h2>Messi</h2>
-        <p>Web Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/kdb.jpg" alt="De Bruyne">
-        <h2>De Bruyne</h2>
-        <p>IOS Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/ney.jpg" alt="Neymar">
-        <h2>Neymar</h2>
-        <p>Web Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/lewan.jpg" alt="Lewandowski">
-        <h2>Lewandowski</h2>
-        <p>Web Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/ozil.jpg" alt="Ozil">
-        <h2>Ozil</h2>
-        <p>Web Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/degea.jpg" alt="De Gea">
-        <h2>De Gea</h2>
-        <p>IOS Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/ney.jpg" alt="Neymar">
-        <h2>Neymar</h2>
-        <p>Web Developer</p>
-      </div>
-      <div class="employee-card">
-        <img src="../Assets/EmployeesPhotos/ney.jpg" alt="Neymar">
-        <h2>Neymar</h2>
-        <p>Web Developer</p>
+      <div class="employee-details" id="employee-details">
+        <!-- Employee details will be displayed here -->
       </div>
     </div>
   </div>
+  <script src="../JavaScript/home-charts/employee-details.js"></script>
 </body>
 
 </html>
