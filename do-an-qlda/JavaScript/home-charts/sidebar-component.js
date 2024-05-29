@@ -1,20 +1,20 @@
 class SidebarComponent extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
 
-  connectedCallback() {
-    this.shadowRoot.innerHTML = `
+    connectedCallback() {
+        this.shadowRoot.innerHTML = `
             <style>
                 ${this.getStyles()}
             </style>
             <div class="sidebar">
                 <div class="sidebar-section">
                     <h2>MAIN</h2>
-                    <a href="#" class="sidebar-link active">
+                    <a href="../Pages/home.html" class="sidebar-link active">
                         <i class="icon-dashboard"></i>
-                        Dashboard
+                        Home
                     </a>
                 </div>
                 <div class="sidebar-section">
@@ -24,16 +24,16 @@ class SidebarComponent extends HTMLElement {
                     </a>
                 </div>
                 <div class="sidebar-section">
-                    <h2>EMPLOYEES</h2>
-                    <a href="#" class="sidebar-link">
+                    <h2>MANAGEMENT</h2>
+                    <a href="../Pages/management-NV.html" class="sidebar-link">
                         <i class="icon-employees"></i>
                         Employees
                     </a>
-                    <a href="#" class="sidebar-link">
+                    <a href="../Pages/meeting-room.html" class="sidebar-link">
                         <i class="icon-clients"></i>
-                        Clients
+                        Meeting rooms
                     </a>
-                    <a href="#" class="sidebar-link">
+                    <a href="../Pages/detail-NV.html" class="sidebar-link">
                         <i class="icon-projects"></i>
                         Projects
                     </a>
@@ -55,10 +55,10 @@ class SidebarComponent extends HTMLElement {
                 </div>
             </div>
         `;
-  }
+    }
 
-  getStyles() {
-    return `
+    getStyles() {
+        return `
             .sidebar {
                 width: 187px;
                 height: 100%;
@@ -117,7 +117,7 @@ class SidebarComponent extends HTMLElement {
                 content: "\\1F4BC";
             }
         `;
-  }
+    }
 }
 
 customElements.define("sidebar-component", SidebarComponent);
