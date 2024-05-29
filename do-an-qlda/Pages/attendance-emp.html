@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/attendance-emp.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fonts/themify-icons/themify-icons.css"
+    />
+    <title>QLDA</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Attendance</h1>
+        <div class="breadcrumb">Dashboard / Attendance</div>
+      </div>
+      <div class="dashboard">
+        <div class="card timesheet">
+          <h2>Timesheet 11 Mar 2019</h2>
+          <div>Punch In at<br />Wed, 11th Mar 2019 10:00 AM</div>
+          <div class="circle">3.45 hrs</div>
+          <button class="button">Punch Out</button>
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              margin-top: 20px;
+            "
+          >
+            <div>Break<br />1.21 hrs</div>
+            <div>Overtime<br />3 hrs</div>
+          </div>
+        </div>
+        <div class="card statistics">
+          <h2>Statistics</h2>
+          <div class="stats">
+            <div class="stat">
+              <span>Today</span>
+              <div class="progress"><div class="progress-today"></div></div>
+              <span>3.45 / 8 hrs</span>
+            </div>
+            <div class="stat">
+              <span>This Week</span>
+              <div class="progress"><div class="progress-week"></div></div>
+              <span>28 / 40 hrs</span>
+            </div>
+            <div class="stat">
+              <span>This Month</span>
+              <div class="progress"><div class="progress-month"></div></div>
+              <span>90 / 160 hrs</span>
+            </div>
+            <div class="stat">
+              <span>Remaining</span>
+              <div class="progress"><div class="progress-remaining"></div></div>
+              <span>90 / 160 hrs</span>
+            </div>
+            <div class="stat">
+              <span>Overtime</span>
+              <div class="progress"><div class="progress-overtime"></div></div>
+              <span>4</span>
+            </div>
+          </div>
+        </div>
+        <div class="card activity">
+          <h2>Today Activity</h2>
+          <ul class="today-activity">
+            <li>Punch In at <span class="time">10:00 AM</span></li>
+            <li>Punch Out at <span class="time">11:00 AM</span></li>
+            <li>Punch In at <span class="time">11:15 AM</span></li>
+            <li>Punch Out at <span class="time">1:30 PM</span></li>
+            <li>Punch In at <span class="time">2:00 PM</span></li>
+            <li>Punch Out at <span class="time">7:30 PM</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
