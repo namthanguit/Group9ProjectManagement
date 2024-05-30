@@ -125,21 +125,24 @@ function showProfile(employeeId) {
     employeeDetailsDiv.innerHTML = `
         <div class="employee-header">
             <img src="../Assets/EmployeesPhotos/${employee.img}" alt="${employee.name}">
-            <h2>${employee.name}</h2>
-            <p>${employee.team}</p>
-            <p>${employee.position}</p>
+            <h2 contenteditable="true" onblur="updateEmployee('${employeeId}', 'name', this.innerText)">${employee.name}</h2>
+            <p contenteditable="true" onblur="updateEmployee('${employeeId}', 'team', this.innerText)">${employee.team}</p>
+            <p contenteditable="true" onblur="updateEmployee('${employeeId}', 'position', this.innerText)">${employee.position}</p>
             <p>Employee ID: ${employee.employeeId}</p>
-            <p>Date of Join: ${employee.joinDate}</p>
+            <p contenteditable="true" onblur="updateEmployee('${employeeId}', 'dateOfJoin', this.innerText)">Date of Join: ${employee.joinDate}</p>
 
         </div>
         <div class="employee-info">
-            <p><strong>Phone:</strong> ${employee.phone}</p>
-            <p><strong>Email:</strong> <a href="mailto:${employee.email}">${employee.email}</a></p>
-            <p><strong>Birthday:</strong> ${employee.birthday}</p>
-            <p><strong>Address:</strong> ${employee.address}</p>
-            <p><strong>Gender:</strong> ${employee.gender}</p>
-            
+            <p><strong>Phone:</strong> <span contenteditable="true" onblur="updateEmployee('${employeeId}', 'phone', this.innerText)">${employee.phone}</span></p>
+            <p><strong>Email:</strong> <a href="mailto:${employee.email}" contenteditable="true" onblur="updateEmployee('${employeeId}', 'email', this.innerText)">${employee.email}</a></p>
+            <p><strong>Birthday:</strong> <span contenteditable="true" onblur="updateEmployee('${employeeId}', 'birthday', this.innerText)">${employee.birthday}</span></p>
+            <p><strong>Address:</strong> <span contenteditable="true" onblur="updateEmployee('${employeeId}', 'address', this.innerText)">${employee.address}</span></p>
+            <p><strong>Gender:</strong> <span contenteditable="true" onblur="updateEmployee('${employeeId}', 'gender', this.innerText)">${employee.gender}</span></p>
         </div>
     `;
     employeeDetailsDiv.classList.add('active');
+}
+
+function updateEmployee(employeeId, key, value) {
+    employees[employeeId][key] = value;
 }
