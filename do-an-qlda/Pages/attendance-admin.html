@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Styles/attendance-admin.css" />
-    <link
-      rel="stylesheet"
-      href="../assets/fonts/themify-icons/themify-icons.css"
-    />
-    <title>QLDA</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../Styles/attendance-admin.css" />
+  <link rel="stylesheet" href="../assets/fonts/themify-icons/themify-icons.css" />
+  <title>QLDA</title>
+</head>
+
+<body>
+  <sidebar-component></sidebar-component>
+  <script src="../JavaScript/home-charts/sidebar-component.js"></script>
+  <div class="container">
     <div class="head-title">
       <div class="title">
         <h2 class="text1">Attendance</h2>
@@ -66,117 +68,419 @@
           <th>30</th>
           <th>31</th>
         </tr>
-        <tbody>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/cr7.jpg"> Cristiano</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/m10.jpg"> Messi</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/lewan.jpg"> Lewandowski</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/degea.jpg"> De Gea</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/ney.jpg"> Neymar Jr.</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/kdb.jpg"> De Bruyne</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/ozil.jpg"> Ozil</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/kaka.jpg"> Kaka</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/foden.jpg"> Foden</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/vini.jpg"> Vini Jr.</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/cr7.jpg"> Cristiano</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-            <tr>
-                <td class="employee-name"><img src="../Assets/EmployeesPhotos/m10.jpg"> Messi</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td>
-                <td class="cross">✖</td><td class="check">✔</td><td class="check">✔</td><td class="check">✔</td><td class="cross">✖</td><td class="check">✔</td>
-                <td class="check">✔</td>
-            </tr>
-        </tbody>
+      <tbody>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/cr7.jpg"> Cristiano</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/m10.jpg"> Messi</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/lewan.jpg"> Lewandowski</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/degea.jpg"> De Gea</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/ney.jpg"> Neymar Jr.</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/kdb.jpg"> De Bruyne</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/ozil.jpg"> Ozil</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/kaka.jpg"> Kaka</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/foden.jpg"> Foden</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/vini.jpg"> Vini Jr.</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/cr7.jpg"> Cristiano</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+        <tr>
+          <td class="employee-name"><img src="../Assets/EmployeesPhotos/m10.jpg"> Messi</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+          <td class="cross">✖</td>
+          <td class="check">✔</td>
+          <td class="check">✔</td>
+        </tr>
+      </tbody>
       </thead>
     </table>
-  </body>
+  </div>
+</body>
+
 </html>

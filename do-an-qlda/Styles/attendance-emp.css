@@ -1,24 +1,31 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+
+
+  display: flex;
 }
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 20px auto;
+  padding-left: 20px;
 }
+
 .header {
   margin-bottom: 20px;
 }
+
 .header h1 {
   margin: 0;
 }
+
 .breadcrumb {
   font-size: 0.9em;
   color: #888;
 }
+
 .card {
   background-color: #fff;
   border-radius: 8px;
@@ -26,23 +33,29 @@ body {
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .dashboard {
   display: flex;
   gap: 20px;
 }
+
 .card h2 {
   margin-top: 0;
 }
+
 .timesheet {
   flex: 1;
   text-align: center;
 }
+
 .statistics {
   flex: 2;
 }
+
 .activity {
   flex: 1;
 }
+
 .circle {
   width: 100px;
   height: 100px;
@@ -55,6 +68,7 @@ body {
   font-size: 1.5em;
   color: #555;
 }
+
 .button {
   background-color: #ff5c77;
   color: #fff;
@@ -65,16 +79,19 @@ body {
   font-size: 1em;
   margin-top: 10px;
 }
+
 .stats {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .stat {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .progress {
   width: 100%;
   height: 10px;
@@ -84,34 +101,42 @@ body {
   margin-left: 10px;
   flex: 1;
 }
+
 .progress div {
   height: 100%;
 }
+
 .progress-today {
   background-color: #ff5c77;
   width: 43.125%;
 }
+
 .progress-week {
   background-color: #ffbb33;
   width: 70%;
 }
+
 .progress-month {
   background-color: #28a745;
   width: 56.25%;
 }
+
 .progress-remaining {
   background-color: #ff5c77;
   width: 56.25%;
 }
+
 .progress-overtime {
   background-color: #007bff;
   width: 15%;
 }
+
 .today-activity {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .today-activity li {
   display: flex;
   align-items: center;
@@ -119,6 +144,7 @@ body {
   position: relative;
   padding-left: 20px;
 }
+
 .today-activity li:before {
   content: "";
   position: absolute;
@@ -132,6 +158,7 @@ body {
   height: 10px;
   margin-right: 10px;
 }
+
 .time {
   color: #888;
   margin-left: auto;
