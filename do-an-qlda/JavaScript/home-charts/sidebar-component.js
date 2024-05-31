@@ -33,24 +33,17 @@ class SidebarComponent extends HTMLElement {
                         <i class="icon-clients"></i>
                         Meeting rooms
                     </a>
-                    <a href="../Pages/detail-NV.html" class="sidebar-link">
+                    <a href="../Pages/attendance-admin.html" class="sidebar-link">
                         <i class="icon-projects"></i>
-                        Projects
+                        Attendance
                     </a>
-                    <a href="#" class="sidebar-link">
+                    <a href="../Pages/leaves-admin.html" class="sidebar-link">
                         <i class="icon-leads"></i>
-                        Leads
+                        Absent Employee
                     </a>
-                    <a href="#" class="sidebar-link">
+                    <a href="../Pages/account.html" class="sidebar-link">
                         <i class="icon-tickets"></i>
-                        Tickets
-                    </a>
-                </div>
-                <div class="sidebar-section">
-                    <h2>HR</h2>
-                    <a href="account.html" class="sidebar-link a">
-                        <i class="icon-accounts"></i>
-                        Accounts
+                        Account
                     </a>
                 </div>
             </div>
