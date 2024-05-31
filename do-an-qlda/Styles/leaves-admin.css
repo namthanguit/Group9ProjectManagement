@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    margin-bottom: 20px;
+}
+.btn-add-leave {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.stats div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.stats div:last-child {
+    margin-right: 0;
+}
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+.search-bar input,
+.search-bar select {
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f9f9f9;
+}
+.status-approved {
+    color: green;
+}
+.status-pending {
+    color: orange;
+}
+.status-rejected {
+    color: red;
+}
+.status-new {
+    color: blue;
+}
+.select2-container--default .select2-selection--single {
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 28px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 28px;
+}
+.action-icons {
+    display: flex;
+}
+.action-icons i {
+    cursor: pointer;
+    font-size: 18px;
+}
+.action-icons i.edit {
+    color: #348eee;
+}
+.action-icons i.delete {
+    color: #e1162b;
+}
