@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <!-- <sidebar-component></sidebar-component>
-    <script src="../JavaScript/home-charts/sidebar-component.js"></script> -->
+    <sidebar-component></sidebar-component>
     <div class="container">
         <h1>Meeting Room Management</h1>
         <div class="search-filter">
@@ -21,8 +20,7 @@
                 <option value="hcm">Ho Chi Minh Area</option>
             </select>
         </div>
-        <div class="rooms" id="rooms">
-        </div>
+        <div class="rooms" id="rooms"></div>
 
         <div class="popup" id="popup">
             <div class="popup-content" id="popup-content">
@@ -30,17 +28,15 @@
             </div>
         </div>
     </div>
+    <script src="../JavaScript/home-charts/sidebar-component.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const rooms = [
                 { id: "P101", status: "Available", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xUjVlv67dbYsLZ55Yfh1I39GKRQ08XKmTspS5kvt-7zZgFjEzIFe7uf0eA&s", seats: 10, videoCall: true, area: "hanoi" },
                 { id: "P102", status: "Busy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrLVQrmoIB0kLKnZCp3oek5dPhk-54xawQQ&s", seats: 8, videoCall: false, area: "hcm", bookingTime: "2024-05-23 14:00", bookedBy: "Nguyễn Văn A" },
                 { id: "P103", status: "Available", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-HTrHoPlXTXK7ehQ1UlofdkmVRwRILWMUw&s", seats: 12, videoCall: true, area: "hanoi" },
-
                 { id: "P104", status: "Busy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cUtQOErDdUcQmGPg0ajXZPHBZs-6qnBFTw&s", seats: 6, videoCall: true, area: "hcm", bookingTime: "2024-05-23 16:00", bookedBy: "Nguyễn Văn B" },
-
                 { id: "P105", status: "Available", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZT4bbCLPc9RAAIdd-RxkC5yC7bG5HtdDKZg&s", seats: 15, videoCall: false, area: "hanoi" },
-
                 { id: "P106", status: "Available", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7sX2Ge-rCDyJZj88ejmXSBdFD4VBM_uQGA&s", seats: 20, videoCall: true, area: "hcm" },
                 { id: "P107", status: "Busy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTujCPIol4z7_WEKl7iRGsRmaxvwjVW50okBg&s", seats: 10, videoCall: false, area: "hanoi", bookingTime: "2024-05-23 10:00", bookedBy: "Nguyễn Văn A" },
                 { id: "P108", status: "Available", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cUtQOErDdUcQmGPg0ajXZPHBZs-6qnBFTw&s", seats: 5, videoCall: true, area: "hcm" },
@@ -49,6 +45,7 @@
                 { id: "P111", status: "Available", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTujCPIol4z7_WEKl7iRGsRmaxvwjVW50okBg&s", seats: 8, videoCall: true, area: "hanoi" },
                 { id: "P112", status: "Busy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50s4TW0WUxspWJuJCdBzX0L53bztS9Uo5Pw&s", seats: 18, videoCall: false, area: "hcm", bookingTime: "2024-05-25 11:00", bookedBy: "Nguyễn Văn A" }
             ];
+
             const roomsContainer = document.getElementById("rooms");
 
             function displayRooms(filter = "all", search = "") {
@@ -115,14 +112,32 @@
                 if (event.target.classList.contains("details")) {
                     const roomId = event.target.closest(".room-card").querySelector(".room-header p:nth-child(1)").textContent.trim();
                     const roomStatus = event.target.closest(".room-card").querySelector(".room-header p:nth-child(2)").textContent.trim();
-                    const bookedBy = event.target.closest(".room-card").querySelector(".room-info .room-time").textContent.trim();
-                    const bookingTime = event.target.closest(".room-card").querySelector(".room-info .room-time").textContent.trim();
-                    showPopup(roomId, roomStatus, bookedBy, bookingTime);
+                    const roomSeats = event.target.closest(".room-card").querySelector(".room-details p:nth-child(1)").textContent.trim();
+                    const roomVideoCall = event.target.closest(".room-card").querySelector(".room-details p:nth-child(2)").textContent.trim();
+                    const roomBookingTime = event.target.closest(".room-card").querySelector(".room-time") ? event.target.closest(".room-card").querySelector(".room-time").textContent.trim() : "";
+                    const roomBookedBy = roomBookingTime ? rooms.find(room => room.id === roomId).bookedBy : "";
+                    const popupContent = document.getElementById("popup-content");
+
+                    popupContent.innerHTML = `
+                        <button class="close" id="close-popup">Close</button>
+                        <h2>Room Details</h2>
+                        <p><strong>Room ID:</strong> ${roomId}</p>
+                        <p><strong>Status:</strong> ${roomStatus}</p>
+                        <p><strong>Seats:</strong> ${roomSeats}</p>
+                        <p><strong>Video Call:</strong> ${roomVideoCall}</p>
+                        ${roomBookingTime ? `<p><strong>Booking Time:</strong> ${roomBookingTime}</p><p><strong>Booked By:</strong> ${roomBookedBy}</p>` : ""}
+                    `;
+
+                    const popup = document.getElementById("popup");
+                    popup.style.display = "block";
                 }
             });
 
-            document.getElementById("close-popup").addEventListener("click", () => {
-                hidePopup();
+            document.getElementById("popup").addEventListener("click", (event) => {
+                if (event.target.id === "popup" || event.target.id === "close-popup") {
+                    const popup = document.getElementById("popup");
+                    popup.style.display = "none";
+                }
             });
         });
     </script>

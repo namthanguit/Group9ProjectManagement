@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f5f5f5;
+    display: flex;
 }
 .container {
     /* max-width: 1200px; */
@@ -86,6 +86,22 @@ th {
 .status-new {
     color: blue;
 }
+.status-approved:hover {
+    background-color: #ff4081 !important;
+    color: #fff !important;
+}
+.status-pending:hover {
+    background-color: #ff4081 !important;
+    color: #fff !important;
+}
+.status-rejected:hover {
+    background-color: #ff4081 !important;
+    color: #fff !important;
+}
+.status-new:hover {
+    background-color: #ff4081 !important;
+    color: #fff !important;
+}
 .select2-container--default .select2-selection--single {
     border: none;
     border-radius: 4px;
@@ -109,4 +125,19 @@ th {
 }
 .action-icons i.delete {
     color: #e1162b;
+}
+.select2-container--default .select2-results__option--hover,
+.select2-container--default .select2-results__option--highlighted {
+    background-color: #ff4081 !important;
+    color: #fff !important;
+}
+
+.select2-container--default .select2-results__option {
+    padding: 8px 10px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
 }
