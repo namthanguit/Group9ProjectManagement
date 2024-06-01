@@ -102,7 +102,7 @@
                 if (event.target.classList.contains("book")) {
                     const roomStatus = event.target.closest(".room-card").querySelector(".room-header p:nth-child(2)").textContent.trim();
                     if (roomStatus === "Available") {
-                        window.location.href = "/do-an-qlda/Pages/room-booking.html";
+                        window.location.href = "popup-booking.html";
                     } else {
                         alert("Room is unavailable!");
                     }

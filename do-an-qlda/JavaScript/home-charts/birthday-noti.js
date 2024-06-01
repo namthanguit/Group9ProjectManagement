@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const person = people.find(p => p.birthDate === today);
 
-    if (person) {
-        document.getElementById('profile-pic').src = `../Assets/EmployeePhotos/${person.img}`;
-        document.getElementById('event-text').innerText = `${person.name}'s Birthday`;
-        // document.getElementById('notification').style.display = 'flex';
-    }
+    // if (person) {
+    //     document.getElementById('profile-pic').src = `../Assets/EmployeePhotos/${person.img}`;
+    //     document.getElementById('event-text').innerText = `${person.name}'s Birthday`;
+    //     // document.getElementById('notification').style.display = 'flex';
+    // }
 });
